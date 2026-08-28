@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+/* Configuração de cada seção */
+.city-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  scroll-snap-align: start;
+  background-color: #ffffff;
+}
+
+/* Texto Mascarado com Imagem de Fundo FIXA */
+.city-title {
+  font-size: 13vw;
+  font-weight: 900;
+  letter-spacing: 12px;
+  line-height: 0.9;
+  text-transform: uppercase;
+  
+  /* Mantém a imagem fixa no fundo ao rolar a tela */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  
+  /* Efeito de recorte dentro das letras */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  
+  margin-bottom: 25px;
+}
+
+/* Imagens das cidades */
+.san-fernando {
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200');
+}
+
+.barcelona {
+  background-image: url('https://images.unsplash.com/photo-1539037116277-4db20889f2d4?q=80&w=1200');
+}
+
+.londres {
+  background-image: url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=1200');
+}
+
+.roma {
+  background-image: url('https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=1200');
+}
+
+/* Texto descritivo */
+.description {
+  max-width: 650px;
+  font-size: 0.95rem;
+  color: #333333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Botão Read More */
+.btn-read-more {
+  background-color: transparent;
+  border: 1px solid #333333;
+  padding: 8px 22px;
+  font-size: 0.85rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0}
